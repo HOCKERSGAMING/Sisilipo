@@ -11,7 +11,7 @@ async def batch(client: Bot, message: Message):
     while True:
         try:
             first_message = await client.ask(
-                text="Teruskan pesan pertama atau paste link post dari CHANNEL_DB",
+                text="Forward the first message or paste the post link from CHANNEL_DB",
                 chat_id=message.from_user.id,
                 filters=(filters.forwarded | (filters.text & ~filters.forwarded)),
                 timeout=60,
@@ -53,7 +53,7 @@ async def batch(client: Bot, message: Message):
         [
             [
                 InlineKeyboardButton(
-                    "Bagikan Link", url=f"https://telegram.me/share/url?url={link}"
+                    "Share Link", url=f"https://telegram.me/share/url?url={link}"
                 )
             ]
         ]
