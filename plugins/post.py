@@ -49,7 +49,7 @@ async def channel_post(client: Client, message: Message):
         [
             [
                 InlineKeyboardButton(
-                    "Bagikan Link", url=f"https://telegram.me/share/url?url={link}"
+                    "Share Link", url=f"https://telegram.me/share/url?url={link}"
                 )
             ]
         ]
@@ -62,7 +62,7 @@ async def channel_post(client: Client, message: Message):
     )
 
     if not DISABLE_BUTTON:
-        try:
+        try:Share
             await post_message.edit_reply_markup(reply_markup)
         except FloodWait as e:
             await asyncio.sleep(e.value)
@@ -84,7 +84,7 @@ async def new_post(client: Client, message: Message):
         [
             [
                 InlineKeyboardButton(
-                    "Bagikan Link", url=f"https://telegram.me/share/url?url={link}"
+                    "Share Link", url=f"https://telegram.me/share/url?url={link}"
                 )
             ]
         ]
