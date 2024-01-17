@@ -7,8 +7,8 @@ def start_button(client):
     if not FORCE_SUB_:
         buttons = [
             [
-                InlineKeyboardButton(text="Bantuan", callback_data="help"),
-                InlineKeyboardButton(text="Tutup", callback_data="close"),
+                InlineKeyboardButton(text="Help", callback_data="help"),
+                InlineKeyboardButton(text="Close", callback_data="close"),
             ],
         ]
         return buttons
