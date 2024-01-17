@@ -39,13 +39,13 @@ START_MESSAGE = getenv(
     "START_MESSAGE",
     "Halo {mention}!"
     "\n\n"
-    "Saya dapat menyimpan file pribadi di Channel tertentu dan pengguna lain dapat mengaksesnya dari link khusus.",
+    "I can save private files on a specific Channel and other users can access them from a special link.",
 )
 FORCE_MESSAGE = getenv(
     "FORCE_MESSAGE",
     "Halo {mention}!"
     "\n\n"
-    "Anda harus bergabung di Channel/Group terlebih dahulu untuk melihat file yang saya bagikan."
+    "You must join the Channel/Group first to see the files I share."
     "\n\n"
     "Silakan Join Ke Channel/Group terlebih dahulu.",
 )
@@ -53,7 +53,7 @@ FORCE_MESSAGE = getenv(
 try:
     ADMINS = [int(x) for x in (getenv("ADMINS").split())]
 except ValueError:
-    raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
+    raise Exception("Your Admin list does not contain a Telegram User ID valid.")
     
 CUSTOM_CAPTION = getenv("CUSTOM_CAPTION", None)
 DISABLE_BUTTON = getenv("DISABLE_BUTTON", False)
