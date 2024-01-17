@@ -30,7 +30,7 @@ async def batch(client: Bot, message: Message):
     while True:
         try:
             second_message = await client.ask(
-                text="Teruskan pesan akhir atau paste link post dari CHANNEL_DB",
+                text="Forward the final message or paste the post link from CHANNEL_DB",
                 chat_id=message.from_user.id,
                 filters=(filters.forwarded | (filters.text & ~filters.forwarded)),
                 timeout=60,
