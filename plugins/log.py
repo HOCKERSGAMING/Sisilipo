@@ -20,4 +20,4 @@ async def logs(client: Bot, message: Message):
             remove(logs_path)
             LOGGER(__name__).warning(e)
     elif not path.exists(logs_path):
-        await message.reply_text("Tidak ada logs yang ditemukan!")
+        await message.reply_text("No logs found!")
