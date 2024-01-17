@@ -47,7 +47,7 @@ FORCE_MESSAGE = getenv(
     "\n\n"
     "You must join the Channel/Group first to see the files I share."
     "\n\n"
-    "Silakan Join Ke Channel/Group terlebih dahulu.",
+    "Please join the channel/group first.",
 )
 
 try:
