@@ -34,13 +34,13 @@ Admin Bot
 
     buttons = [
         [
-            InlineKeyboardButton("Tentang", callback_data="about"),
-            InlineKeyboardButton("Tutup", callback_data="close")
+            InlineKeyboardButton("About", callback_data="about"),
+            InlineKeyboardButton("Close", callback_data="close")
         ],
     ]
 
     ABOUT = """
-@{} adalah Bot untuk menyimpan postingan atau file yang dapat diakses melalui link khusus.
+@{} is a bot for saving posts or files that can be accessed via a special link.
 
   Framework: <a href='https://docs.hydrogram.org'>hydrogram</a>
   Re-Code From: <a href='https://github.com/mrismanaziz/File-Sharing-Man'>File-Sharing-Man</a>
